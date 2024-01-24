@@ -1,0 +1,67 @@
+{
+  "env": {
+    "browser": true,
+    "es2023": true,
+    "node": true
+  },
+  "extends": ["plugin:@typescript-eslint/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "import", "prefer-arrow", "eslint-plugin-absolute-only", "prettier"],
+  "rules": {
+    "curly": "error",
+    "eqeqeq": ["error", "smart"],
+    "no-lonely-if": "error",
+    "no-var": "error",
+    "prefer-const": ["error", { "destructuring": "all" }],
+    "arrow-body-style": ["error", "as-needed"],
+    "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": false }],
+    "prefer-arrow-callback": "error",
+    "object-shorthand": "error",
+    "spaced-comment": ["error", "always"],
+    "no-nested-ternary": "error",
+    "array-callback-return": ["error", { "allowImplicit": true, "checkForEach": true }],
+    "func-style": ["error", "expression"],
+    "eol-last": ["error", "always"],
+    "no-use-before-define": "off",
+    "newline-before-return": "warn",
+    "sort-imports": ["error", { "ignoreDeclarationSort": true }],
+    "no-undef": "off",
+    "no-redeclare": "error",
+    "@typescript-eslint/no-shadow": ["error", { "builtinGlobals": false }],
+    "@typescript-eslint/consistent-type-imports": "warn",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "^_",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/member-delimiter-style": "warn",
+    "import/no-duplicates": "error",
+    "import/first": "error",
+    "import/default": "error",
+    "import/prefer-default-export": "warn",
+    "import/no-named-as-default-member": "warn",
+    "import/no-named-default": "error",
+    "import/newline-after-import": "warn",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ],
+    "prefer-arrow/prefer-arrow-functions": ["warn", { "singleReturnOnly": true }],
+    "absolute-only/imports": "error"
+  }
+}

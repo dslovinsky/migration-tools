@@ -1,0 +1,17 @@
+node_modules/
+
+.env*
+
+build/
+
+package-lock.json
+yarn-error.log
+
+.eslintcache
+
+.vscode
+.DS_Store
+
+logs/*
+rawData/*
+errors/*

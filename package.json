@@ -1,0 +1,56 @@
+{
+  "name": "migration-tools",
+  "description": "A collection of tools to help with CMS content migrations",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": {
+    "name": "Webstacks",
+    "url": "https://www.webstacks.com/"
+  },
+  "scripts": {
+    "test": "ts-node src/scripts/test.ts",
+    "prepare": "husky install",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx,mdx}\" --fix",
+    "format": "prettier --write --log-level silent \"src/**/*.{js,jsx,ts,tsx,mdx}\""
+  },
+  "dependencies": {
+    "@contentful/rich-text-from-markdown": "^15.16.8",
+    "@datocms/cma-client-node": "^3.0.9",
+    "contentful-management": "^11.6.1",
+    "contentful-migration": "^4.18.2",
+    "datocms-html-to-structured-text": "^2.1.11",
+    "dotenv": "^16.3.1",
+    "imurmurhash": "^0.1.4",
+    "node-fetch": "^3.3.2",
+    "parse5": "^7.1.2",
+    "ts-node": "^10.9.2",
+    "turndown": "^7.1.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/imurmurhash": "^0.1.4",
+    "@types/node": "^20.10.5",
+    "@types/node-fetch": "^2.6.9",
+    "@types/turndown": "^5.0.4",
+    "@types/uuid": "^9.0.7",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-absolute-only": "^1.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,mjs,mts,ts,tsx,mdx}": [
+      "eslint --fix",
+      "prettier --write --log-level silent"
+    ]
+  }
+}
