@@ -15,3 +15,5 @@ yarn-error.log
 logs/*
 rawData/*
 errors/*
+jwt/*
+scripts/*
