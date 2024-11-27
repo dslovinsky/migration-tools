@@ -10,7 +10,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "import", "prefer-arrow", "eslint-plugin-absolute-only", "prettier"],
+  "plugins": ["@typescript-eslint", "import", "prefer-arrow", "prettier"],
   "rules": {
     "curly": "error",
     "eqeqeq": ["error", "smart"],
@@ -40,7 +40,8 @@
         "argsIgnorePattern": "^_"
       }
     ],
-    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-use-before-define": "error",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/member-delimiter-style": "warn",
     "import/no-duplicates": "error",
@@ -61,7 +62,6 @@
         }
       }
     ],
-    "prefer-arrow/prefer-arrow-functions": ["warn", { "singleReturnOnly": true }],
-    "absolute-only/imports": "error"
+    "prefer-arrow/prefer-arrow-functions": ["warn", { "singleReturnOnly": true }]
   }
 }

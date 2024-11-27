@@ -1,11 +1,5 @@
 import { camelCase } from 'utils/casers';
 
-export interface GoogleSheet {
-  range: string;
-  majorDimension: string;
-  values: string[][];
-}
-
 /**
  * Converts a Google Sheets object to an array of objects with the column headers as keys
  * By default, Google Sheet's API returns an array of arrays, where the first array is the column headers.
@@ -13,8 +7,8 @@ export interface GoogleSheet {
  * @param sheet Raw data fetched from Google Sheets' API
  * @returns An array of objects representing each row in the sheet
  */
-const sheetToObjects = (sheet: GoogleSheet) => {
-  const [headers, ...rows] = sheet.values;
+const sheetToObjects = (sheetValues: string[][]) => {
+  const [headers, ...rows] = sheetValues;
 
   return rows.map(row =>
     row.reduce<{ [key: string]: string }>(
