@@ -451,8 +451,8 @@ packages:
     resolution: {integrity: sha512-j1QzY8iPNPG4o4xmO3ptzpRxTciqD3MgEHtifP/YnJpIo58Xu+ne4BejlbkuaLfXn/nz6HFiw29bLpj2PNMdGg==}
     engines: {node: '>= 0.4'}
 
-  axios@1.6.7:
-    resolution: {integrity: sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==}
+  axios@1.7.8:
+    resolution: {integrity: sha512-Uu0wb7KNqK2t5K+YQyVCLM76prD5sRFjKHbJYCP1J7JFGEQ6nN7HWn9+04LAeiJ3ji54lgS/gZCH1oxyrf1SPw==}
 
   bail@1.0.5:
     resolution: {integrity: sha512-xFbRxM1tahm08yHBP16MMjVUAvDaBMD38zsM9EMAUN61omwLmKlOpB/Zku5QkjZ8TZ4vn53pj+t518cH0S03RQ==}
@@ -2528,7 +2528,7 @@ snapshots:
 
   available-typed-arrays@1.0.6: {}
 
-  axios@1.6.7:
+  axios@1.7.8:
     dependencies:
       follow-redirects: 1.15.6
       form-data: 4.0.0
@@ -2678,7 +2678,7 @@ snapshots:
     dependencies:
       '@contentful/rich-text-types': 16.3.4
       '@types/json-patch': 0.0.30
-      axios: 1.6.7
+      axios: 1.7.8
       contentful-sdk-core: 8.1.2
       fast-copy: 3.0.1
       lodash.isplainobject: 4.0.6
@@ -2689,7 +2689,7 @@ snapshots:
   contentful-migration@4.20.0:
     dependencies:
       '@hapi/hoek': 11.0.4
-      axios: 1.6.7
+      axios: 1.7.8
       bluebird: 3.7.2
       callsites: 3.1.0
       cardinal: 2.1.1
